@@ -1,4 +1,25 @@
-// Play with constructors
+
+
+
+//Play with constructors
+#include <iostream>
+#include "class.cpp"
+
+int main()
+{
+    Student s1;    // Constructor 1 called;
+
+    Student s2(101);    // Constructor 2 called;
+
+    Student s3(20, 102);    // Constructor 3 called;
+
+    Student s4(s3);     // Copy Constructor
+
+    s1 = s2;    // Copy assignment operator **No constructor call's being made here** Because s1 and s2 already exists in the memory.
+
+    Student s5 = s4; // here "copy constructor" is being used assignment operator is not used by the copmiler for optimization purposes.
+    // which initially means the "Student s5 = s4" will be something like this "Student s5(s4)" which is done by the compiler. 
+}
 
 
 
