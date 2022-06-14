@@ -1,2 +1,6 @@
+#Directories
 /.vscode
+
+#files 
 *.exe
+.gitignore
